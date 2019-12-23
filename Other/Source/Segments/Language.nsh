@@ -70,7 +70,7 @@ ${SegmentInit}
 						${If} $4 == true
               ${If} $9 == true
                 ${DebugMsg} "Reading the language from $1, entry `$2`, with ConfigReadUnixS."
-                ${ConfigReadS} $1 $2 $8
+                ${ConfigReadUnixS} $1 $2 $8
               ${Else}
                 ${DebugMsg} "Reading the language from $1, entry `$2`, with ConfigReadS."
                 ${ConfigReadS} $1 $2 $8
